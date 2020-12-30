@@ -1,0 +1,47 @@
+Value N 1
+{"app_id": "030398", "dev_id": "arduino_otaa", "hardware_serial": "00EC54127B22570C", "port": 1, "counter": 521, "payload_raw": "FSo=", "payload_fields": {"Data": {"Humidity": 42, "Temperature": 21}}, "metadata": {"time": "2020-12-25T16:58:46.250333843Z", "frequency": 868.1, "modulation": "LORA", "data_rate": "SF7BW125", "airtime": 46336000, "coding_rate": "4/5", "gateways": [{"gtw_id": "eui-58a0cbfffe800692", "timestamp": 1826269403, "time": "2020-12-25T16:58:46.412625074Z", "channel": 0, "rssi": -70, "snr": 9.25, "rf_chain": 0}, {"gtw_id": "eui-58a0cbfffe8003e5", "timestamp": 85013771, "time": "2020-12-25T16:58:46.252034902Z", "channel": 0, "rssi": -55, "snr": 9.5, "rf_chain": 0}]}}
+Value N 2
+{"app_id": "030398", "dev_id": "arduino_otaa", "hardware_serial": "00EC54127B22570C", "port": 1, "counter": 522, "payload_raw": "FSo=", "payload_fields": {"Data": {"Humidity": 42, "Temperature": 21}}, "metadata": {"time": "2020-12-25T16:58:58.346538969Z", "frequency": 868.1, "modulation": "LORA", "data_rate": "SF7BW125", "airtime": 46336000, "coding_rate": "4/5", "gateways": [{"gtw_id": "eui-58a0cbfffe800692", "timestamp": 1838368411, "time": "2020-12-25T16:58:58.502226114Z", "channel": 0, "rssi": -64, "snr": 8.75, "rf_chain": 0}, {"gtw_id": "eui-58a0cbfffe8003e5", "timestamp": 97112779, "time": "2020-12-25T16:58:58.366502046Z", "channel": 0, "rssi": -64, "snr": 8.75, "rf_chain": 0}]}}
+Value N 3
+{"app_id": "030398", "dev_id": "arduino_otaa", "hardware_serial": "00EC54127B22570C", "port": 1, "counter": 523, "payload_raw": "FSo=", "payload_fields": {"Data": {"Humidity": 42, "Temperature": 21}}, "metadata": {"time": "2020-12-25T16:59:10.447895215Z", "frequency": 868.1, "modulation": "LORA", "data_rate": "SF7BW125", "airtime": 46336000, "coding_rate": "4/5", "gateways": [{"gtw_id": "eui-58a0cbfffe800692", "timestamp": 1850468723, "time": "2020-12-25T16:59:10.607609987Z", "channel": 0, "rssi": -65, "snr": 10.5, "rf_chain": 0}, {"gtw_id": "eui-58a0cbfffe8003e5", "timestamp": 109213083, "time": "2020-12-25T16:59:10.465511083Z", "channel": 0, "rssi": -57, "snr": 10.5, "rf_chain": 0}]}}
+
+{
+    "app_id": "030398", // peut être utile 
+    "dev_id": "arduino_otaa", // nom du device : CLE SECONDAIRE
+    "hardware_serial": "00EC54127B22570C", // ID DEVICE : CLE PRIMAIRE
+    "port": 1, 
+    "counter": 521, 
+    "payload_raw": "FSo=", 
+    "payload_fields": {
+        "Data": {   // data utilité pour créer de la donnée  --> interet de financement des antennes pour la ville : reduction vol / suivit polution et météo ( pensée globale )
+            "Humidity": 42, 
+            "Temperature": 21
+            }
+    }, 
+    "metadata": {
+        "time": "2020-12-25T16:58:46.250333843Z", // arrivée au serveur
+        "frequency": 868.1, 
+        "modulation": "LORA", 
+        "data_rate": "SF7BW125", 
+        "airtime": 46336000, // temps pour une antenne de déploiement 
+        "coding_rate": "4/5", 
+        "gateways": [
+            {
+            "gtw_id": "eui-58a0cbfffe800692", // ID de la gateway : donc sont emplacement aussi
+            "timestamp": 1826269403, 
+            "time": "2020-12-25T16:58:46.412625074Z", // heure d'arrivé à la gateway
+            "channel": 0, 
+            "rssi": -70, // nécessaire pour le calcul de la position
+            "snr": 9.25, 
+            "rf_chain": 0}, 
+            {
+            "gtw_id": "eui-58a0cbfffe8003e5",  // same
+            "timestamp": 85013771, 
+            "time": "2020-12-25T16:58:46.252034902Z", // same
+            "channel": 0, 
+            "rssi": -55, // same
+            "snr": 9.5, 
+            "rf_chain": 0}
+        ]
+    }
+}
