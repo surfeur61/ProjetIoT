@@ -1,4 +1,18 @@
-# ProjetIoT
+# A FAIRE :
+
+Calcul énergie total du système poids pour l'environnement.
+
+Environnement économique du projet.
+
+Faire l'algo de triangulation.
+
+Réaliser la Carte pour visualiser les vélos.
+
+Faire une database ?
+
+
+
+# ProjetIoT :
 
 - mise en place des gateways LoRa
     connecter les gateways au réseau suivant les informations sur ce lien : https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/ 
